@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="id">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260924-23-1ca159e","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Maya Sistem Pernapasan</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #29445a;
+      --muted: #718596;
+      --cream: #f5fbfa;
+      --teal: #78bfc0;
+      --teal-dark: #4d858d;
+      --coral: #f3aaa0;
+      --sky: #d8f1f0;
+      --gold: #f6d58b;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    .app-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      position: relative;
+      overflow: hidden;
+      background-image:
+        radial-gradient(circle at 10% 15%, rgba(216, 241, 240, 0.82) 0, transparent 24rem),
+        radial-gradient(circle at 90% 90%, rgba(246, 213, 139, 0.28) 0, transparent 23rem);
+      aspect-ratio: 16 / 9;
+    }
+
+    @media (max-width: 767px) {
+      .app-shell { aspect-ratio: auto; }
+    }
+
+    .partner-logo {
+      mix-blend-mode: multiply;
+      filter: saturate(1.05) contrast(1.04);
+    }
+
+    .logo-row {
+      gap: 0.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .logo-row { gap: 1rem; }
+    }
+
+    .logo-row .partner-logo {
+      height: 5.75rem;
+      max-height: 5.75rem;
+      object-fit: contain;
+    }
+
+    @media (min-width: 640px) {
+      .logo-row .partner-logo {
+        height: 7rem;
+        max-height: 7rem;
+      }
+    }
+
+    .app-shell::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.3;
+      background-image: radial-gradient(#78bfc0 0.65px, transparent 0.65px);
+      background-size: 20px 20px;
+      mask-image: linear-gradient(to bottom, black, transparent 75%);
+    }
+
+    .screen {
+      display: none;
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      position: relative;
+      z-index: 1;
+      animation: screenIn 0.5s ease both;
+    }
+    .screen.active { display: flex; }
+
+    @keyframes screenIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .display-font { font-family: "Fraunces", serif; }
+    .glass-card {
+      border: 1px solid rgba(4, 127, 130, 0.15);
+      box-shadow: 0 18px 44px rgba(20, 65, 75, 0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    .lab-button {
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+    .lab-button:hover { transform: translateY(-3px); filter: brightness(1.03); }
+    .lab-button:focus-visible,
+    .menu-card:focus-visible,
+    .organ-hotspot:focus-visible,
+    .activity-choice:focus-visible {
+      outline: 3px solid #f4b94f;
+      outline-offset: 4px;
+    }
+
+    .lung-float { animation: breatheIdle 4.2s ease-in-out infinite; transform-origin: center; }
+    @keyframes breatheIdle {
+      0%, 100% { transform: scale(0.98); }
+      50% { transform: scale(1.035); }
+    }
+
+    .menu-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+    }
+    .menu-card:hover {
+      transform: translateY(-7px) rotate(-0.5deg);
+      box-shadow: 0 20px 34px rgba(20, 65, 75, 0.16);
+    }
+
+    .organ-hotspot {
+      cursor: pointer;
+      transition: filter 0.2s ease, opacity 0.2s ease;
+    }
+    .organ-hotspot:hover,
+    .organ-hotspot.selected { filter: drop-shadow(0 0 8px rgba(244,185,79,0.9)); }
+    .organ-hotspot.selected { opacity: 1 !important; }
+
+    .organ-panel { display: none; }
+    .organ-panel.active { display: block; animation: screenIn 0.3s ease both; }
+
+    .sim-stage {
+      background:
+        linear-gradient(rgba(255,255,255,0.88), rgba(234,250,248,0.95)),
+        radial-gradient(circle at center, #d9f7f4 0, transparent 60%);
+    }
+
+    .sim-lungs { transform-origin: 50% 55%; transition: transform 1.1s cubic-bezier(.2,.8,.2,1); }
+    .sim-diaphragm { transition: transform 1.1s cubic-bezier(.2,.8,.2,1); }
+    .air-flow { opacity: 0; transition: opacity 0.35s ease; }
+    .gas-pill { opacity: 0; transition: opacity 0.35s ease; }
+
+    .sim-stage.inhale .sim-lungs { transform: scale(1.13, 1.1); }
+    .sim-stage.inhale .sim-diaphragm { transform: translateY(22px); }
+    .sim-stage.inhale .oxygen-flow,
+    .sim-stage.exhale .carbon-flow,
+    .sim-stage.inhale .oxygen-pill,
+    .sim-stage.exhale .carbon-pill { opacity: 1; }
+
+    .sim-stage.exhale .sim-lungs { transform: scale(0.88, 0.88); }
+    .sim-stage.exhale .sim-diaphragm { transform: translateY(-18px); }
+
+    .flow-dot { animation: flow 1.7s linear infinite; }
+    @keyframes flow {
+      from { stroke-dashoffset: 130; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    .activity-choice {
+      border: 2px solid transparent;
+      transition: 0.2s ease;
+    }
+    .activity-choice:hover { transform: translateY(-3px); }
+    .activity-choice.selected {
+      border-color: var(--teal);
+      background: #d7f4ef;
+      box-shadow: 0 8px 20px rgba(4,127,130,0.16);
+    }
+
+    .activity-choice .activity-icon {
+      display: inline-block;
+      transform-origin: center bottom;
+    }
+    .activity-choice.selected[data-activity="rest"] .activity-icon {
+      animation: restSway 2.8s ease-in-out infinite;
+    }
+    .activity-choice.selected[data-activity="walk"] .activity-icon {
+      animation: walkStep 0.8s ease-in-out infinite alternate;
+    }
+    .activity-choice.selected[data-activity="run"] .activity-icon {
+      animation: runBounce 0.38s ease-in-out infinite alternate;
+    }
+    @keyframes restSway {
+      0%, 100% { transform: rotate(-3deg) translateY(0); }
+      50% { transform: rotate(3deg) translateY(-3px); }
+    }
+    @keyframes walkStep {
+      from { transform: translateY(0) rotate(-5deg); }
+      to { transform: translateY(-6px) rotate(5deg); }
+    }
+    @keyframes runBounce {
+      from { transform: translateY(0) rotate(-8deg) scale(1); }
+      to { transform: translateY(-9px) rotate(8deg) scale(1.08); }
+    }
+
+    .answer-box { display: none; }
+    .answer-box.show { display: block; animation: screenIn 0.35s ease both; }
+
+    @media (max-width: 640px) {
+      .body-map { min-height: 470px; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/ef0304cb8c7ed696.editing_sdk.js" type="text/javascript" integrity="sha512-kmL9L5Yuj57MQaequKbMA3aGpT/5lBUp10iGA3e3qnmMLs2ZZQ0poCcIfdd5rTgrhEvNPe4HK0ohePW7ZpgAFg=="></script>
+  <script src="/_sdk/ddcab3e45959c817.resizing_sdk.js" type="text/javascript" integrity="sha512-VAviUKfZVzugWBSeULYjSljTX+nb84wc6Zzbx5GQaQgh6X2ISSjXi8eIiCDGdwDh10esJMY0+QFQgUy9NcrTlQ=="></script>
+ </head>
+ <body data-template-id="__page-root">
+  <div class="app-shell">
+   <main aria-live="polite">
+    <section id="lobby-screen" class="screen active flex-col items-center justify-center px-5 py-8 sm:py-10" aria-labelledby="lobby-title">
+     <div class="logo-row w-full max-w-6xl mb-6 sm:mb-8 grid grid-cols-2 sm:grid-cols-4 items-center" aria-label="Logo mitra pendidikan">
+      <img data-template-id="education-quality-logo" loading="lazy" class="partner-logo canva-image w-full object-contain"> <img data-template-id="kemendikdasmen-logo" loading="lazy" class="partner-logo canva-image w-full object-contain"> <img data-template-id="ramah-logo" loading="lazy" class="partner-logo canva-image w-full object-contain"> <img data-template-id="sobat-smp-logo" loading="lazy" class="partner-logo canva-image w-full object-contain">
+     </div>
+     <div class="w-full max-w-6xl grid lg:grid-cols-2 gap-8 items-center">
+      <div class="order-2 lg:order-1">
+       <p data-template-id="lobby-kicker" class="canva-text uppercase tracking-[0.24em] font-bold mb-2"></p>
+       <p data-template-id="lobby-subtitle" class="canva-text font-bold mb-1"></p>
+       <p data-template-id="lobby-grade" class="canva-text mb-4"></p>
+       <h1 id="lobby-title" data-template-id="lobby-title" class="canva-text display-font font-bold leading-tight mb-5"></h1>
+       <p data-template-id="lobby-description" class="canva-text text-lg leading-relaxed max-w-xl mb-8"></p>
+       <div data-template-id="teacher-profile" class="canva-card flex items-center gap-4 mb-7"><img data-template-id="teacher-photo" loading="lazy" class="canva-image w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover shadow-md">
+        <div>
+         <p data-template-id="teacher-name" class="canva-text font-bold text-lg"></p>
+         <p data-template-id="teacher-role" class="canva-text text-sm mt-1"></p>
+        </div>
+       </div><button id="start-button" type="button" data-template-id="start-button" class="canva-button lab-button inline-flex items-center gap-3 rounded-full px-7 py-4 font-bold shadow-lg"> <span data-template-id="start-button-text" class="canva-text"></span> <i data-lucide="arrow-right" aria-hidden="true" class="w-5 h-5"></i> </button>
+      </div>
+      <div class="order-1 lg:order-2 relative flex justify-center">
+       <div class="absolute w-80 h-80 rounded-full bg-[#bce9ed] opacity-60 blur-2xl"></div>
+       <div class="glass-card relative bg-white/80 rounded-[2.5rem] p-8 sm:p-12 w-full max-w-md">
+        <div class="flex justify-between items-center mb-7"><span data-template-id="lobby-badge" class="canva-tag rounded-full px-4 py-2 font-bold"></span> <i data-lucide="microscope" class="w-7 h-7 text-[#047f82]" aria-hidden="true"></i>
+        </div>
+        <svg class="lung-float w-full" viewbox="0 0 300 250" role="img" aria-label="Ilustrasi paru-paru"><path d="M149 53v94" fill="none" stroke="#153047" stroke-width="12" stroke-linecap="round" /> <path d="M151 86c-23 0-42 9-56 28-15 20-27 62-23 88 4 22 20 28 34 15 13-12 17-35 23-54 5-17 11-26 21-27" fill="#ef8d85" stroke="#153047" stroke-width="7" stroke-linejoin="round" /> <path d="M151 86c23 0 42 9 56 28 15 20 27 62 23 88-4 22-20 28-34 15-13-12-17-35-23-54-5-17-11-26-21-27" fill="#ef8d85" stroke="#153047" stroke-width="7" stroke-linejoin="round" /> <path d="M150 53c-2-15 11-25 26-31" fill="none" stroke="#153047" stroke-width="12" stroke-linecap="round" /> <circle cx="182" cy="18" r="7" fill="#f4b94f" /> <circle cx="67" cy="90" r="7" fill="#047f82" /> <circle cx="238" cy="120" r="5" fill="#047f82" />
+        </svg>
+        <p data-template-id="lobby-visual-label" class="canva-text text-center font-semibold mt-5"></p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="intro-screen" class="screen items-center justify-center px-5 py-10" aria-labelledby="intro-title">
+     <div class="w-full max-w-5xl">
+      <div class="bg-white/90 glass-card rounded-[2rem] p-7 sm:p-11">
+       <div class="flex items-start gap-4 mb-8">
+        <div class="w-12 h-12 rounded-2xl bg-[#78bfc0] text-[#29445a] grid place-items-center shrink-0"><i data-lucide="compass" aria-hidden="true"></i>
+        </div>
+        <div>
+         <p data-template-id="intro-kicker" class="canva-text uppercase tracking-[0.2em] font-bold"></p>
+         <h2 id="intro-title" data-template-id="intro-title" class="canva-text display-font font-bold mt-1"></h2>
+        </div>
+       </div>
+       <div class="grid md:grid-cols-2 gap-6 mb-9">
+        <article data-template-id="learning-card" class="canva-card rounded-3xl p-6 bg-[#eaf8f6]">
+         <div class="flex items-center gap-3 mb-3"><i data-lucide="target" class="w-5 h-5 text-[#047f82]" aria-hidden="true"></i>
+          <h3 data-template-id="learning-title" class="canva-text font-bold"></h3>
+         </div>
+         <p data-template-id="learning-text" class="canva-text leading-relaxed whitespace-pre-line"></p>
+        </article>
+        <article data-template-id="guide-card" class="canva-card rounded-3xl p-6 bg-[#fff6e8]">
+         <div class="flex items-center gap-3 mb-3"><i data-lucide="mouse-pointer-click" class="w-5 h-5 text-[#ba7b11]" aria-hidden="true"></i>
+          <h3 data-template-id="guide-title" class="canva-text font-bold"></h3>
+         </div>
+         <p data-template-id="guide-text" class="canva-text leading-relaxed"></p>
+        </article>
+       </div>
+       <div class="flex flex-wrap items-center gap-3"><button id="menu-button" type="button" data-template-id="menu-button" class="canva-button lab-button inline-flex items-center gap-3 rounded-full px-7 py-4 font-bold"> <span data-template-id="menu-button-text" class="canva-text"></span> <i data-lucide="layout-grid" class="w-5 h-5" aria-hidden="true"></i> </button><button id="intro-back-button" type="button" data-template-id="intro-back-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 bg-white/80 shadow-sm font-bold"><i data-lucide="arrow-left" class="w-4 h-4" aria-hidden="true"></i><span data-template-id="intro-back-text" class="canva-text"></span></button> <button id="intro-next-button" type="button" data-template-id="intro-next-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold"><span data-template-id="intro-next-text" class="canva-text"></span><i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></button>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="menu-screen" class="screen flex-col items-center justify-center px-5 py-10" aria-labelledby="menu-title">
+     <div class="w-full max-w-6xl">
+      <header class="text-center mb-9">
+       <p data-template-id="menu-kicker" class="canva-text uppercase tracking-[0.2em] font-bold mb-2"></p>
+       <h2 id="menu-title" data-template-id="menu-title" class="canva-text display-font font-bold"></h2>
+       <p data-template-id="menu-description" class="canva-text mt-3 max-w-2xl mx-auto"></p>
+      </header>
+      <div class="grid md:grid-cols-3 gap-5"><button id="organ-menu-card" type="button" data-template-id="organ-menu-card" class="canva-card menu-card text-left rounded-[2rem] p-7 bg-white glass-card">
+        <div class="w-14 h-14 rounded-2xl bg-[#d7f4ef] grid place-items-center mb-6 text-[#047f82]">
+         <i data-lucide="scan-search" aria-hidden="true"></i>
+        </div><h3 data-template-id="organ-menu-title" class="canva-text font-bold mb-3"></h3><p data-template-id="organ-menu-text" class="canva-text leading-relaxed"></p><span data-template-id="organ-menu-link" class="canva-link inline-block mt-6 font-bold"></span> </button> <button id="simulation-menu-card" type="button" data-template-id="simulation-menu-card" class="canva-card menu-card text-left rounded-[2rem] p-7 bg-[#075f69] text-white shadow-xl">
+        <div class="w-14 h-14 rounded-2xl bg-white/15 grid place-items-center mb-6">
+         <i data-lucide="wind" aria-hidden="true"></i>
+        </div><h3 data-template-id="simulation-menu-title" class="canva-text font-bold mb-3"></h3><p data-template-id="simulation-menu-text" class="canva-text leading-relaxed"></p><span data-template-id="simulation-menu-link" class="canva-link inline-block mt-6 font-bold"></span> </button> <button id="experiment-menu-card" type="button" data-template-id="experiment-menu-card" class="canva-card menu-card text-left rounded-[2rem] p-7 bg-[#fff1d4] glass-card">
+        <div class="w-14 h-14 rounded-2xl bg-[#f4b94f] grid place-items-center mb-6 text-[#4b3510]">
+         <i data-lucide="flask-conical" aria-hidden="true"></i>
+        </div><h3 data-template-id="experiment-menu-title" class="canva-text font-bold mb-3"></h3><p data-template-id="experiment-menu-text" class="canva-text leading-relaxed"></p><span data-template-id="experiment-menu-link" class="canva-link inline-block mt-6 font-bold"></span> </button>
+      </div>
+     </div>
+     <nav class="slide-nav w-full max-w-6xl mx-auto mt-auto pt-8 flex items-center justify-between gap-4" aria-label="Navigasi slide"><button id="menu-back-button" type="button" data-template-id="menu-back-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 bg-white/80 shadow-sm font-bold"><i data-lucide="arrow-left" class="w-4 h-4" aria-hidden="true"></i><span data-template-id="menu-back-text" class="canva-text"></span></button> <button id="menu-next-button" type="button" data-template-id="menu-next-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold"><span data-template-id="menu-next-text" class="canva-text"></span><i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></button>
+     </nav>
+    </section>
+    <section id="organ-screen" class="screen flex-col px-5 py-7" aria-labelledby="organ-title">
+     <header class="w-full max-w-6xl mx-auto flex justify-between items-center mb-5">
+      <div>
+       <p data-template-id="organ-kicker" class="canva-text uppercase tracking-[0.18em] font-bold"></p>
+       <h2 id="organ-title" data-template-id="organ-title" class="canva-text display-font font-bold"></h2>
+      </div><button type="button" class="back-to-menu lab-button inline-flex items-center gap-2 rounded-full px-4 py-3 bg-white shadow-sm font-bold text-[#035b66]" aria-label="Kembali ke menu utama"> <i data-lucide="arrow-left" class="w-5 h-5" aria-hidden="true"></i> <span data-template-id="back-label-organ" class="canva-text"></span> </button>
+     </header>
+     <div class="w-full max-w-6xl mx-auto grid lg:grid-cols-[1fr_0.85fr] gap-6 items-stretch">
+      <section data-template-id="body-map-card" class="canva-card body-map rounded-[2rem] p-4 sm:p-7 bg-white glass-card relative min-h-[540px]" aria-label="Peta tubuh interaktif sistem pernapasan">
+       <p data-template-id="body-map-hint" class="canva-text text-center font-semibold mb-2"></p>
+       <svg viewbox="0 0 420 590" class="w-full h-[450px] sm:h-[490px]" role="img" aria-label="Tubuh manusia dan jalur sistem pernapasan"><path d="M210 58c-43 0-70 33-70 74 0 29 12 52 32 64v55l-55 37c-18 12-27 32-25 53l11 142c2 28 21 49 48 55l14 3v55h90v-55l14-3c27-6 46-27 48-55l11-142c2-21-7-41-25-53l-55-37v-55c20-12 32-35 32-64 0-41-27-74-70-74z" fill="#e9eff1" stroke="#b7c9cf" stroke-width="4" /> <circle cx="210" cy="125" r="18" fill="#d7a486" opacity="0.72" /> <path d="M206 135v34" stroke="#ffffff" stroke-width="3" opacity="0.8" /> <g class="organ-hotspot" data-organ="nose" tabindex="0" role="button" aria-label="Pilih organ hidung">
+         <path d="M207 114c12 4 17 15 12 25l-12 7c-8-3-10-12-6-18z" fill="#ef765e" stroke="#9e4639" stroke-width="2" />
+        </g> <g class="organ-hotspot" data-organ="pharynx" tabindex="0" role="button" aria-label="Pilih organ faring">
+         <path d="M204 146h13v27h-13z" fill="#f4b94f" stroke="#996d12" stroke-width="2" />
+        </g> <g class="organ-hotspot" data-organ="larynx" tabindex="0" role="button" aria-label="Pilih organ laring">
+         <rect x="201" y="171" width="19" height="14" rx="5" fill="#ef765e" stroke="#9e4639" stroke-width="2" />
+        </g> <g class="organ-hotspot" data-organ="trachea" tabindex="0" role="button" aria-label="Pilih organ trakea">
+         <path d="M210 186v82" stroke="#047f82" stroke-width="15" stroke-linecap="round" />
+         <path d="M203 198h14M203 212h14M203 226h14M203 240h14M203 254h14" stroke="#bce9ed" stroke-width="2" />
+        </g> <g class="organ-hotspot" data-organ="bronchi" tabindex="0" role="button" aria-label="Pilih organ bronkus">
+         <path d="M210 264c-26 8-46 27-59 52M210 264c26 8 46 27 59 52" fill="none" stroke="#047f82" stroke-width="13" stroke-linecap="round" />
+        </g> <g class="organ-hotspot" data-organ="bronchioles" tabindex="0" role="button" aria-label="Pilih organ bronkiolus">
+         <path d="M151 309c-20 15-31 37-34 68m40-56c-2 28-12 49-27 64m139-76c20 15 31 37 34 68m-40-56c2 28 12 49 27 64" fill="none" stroke="#39a7a4" stroke-width="7" stroke-linecap="round" />
+        </g> <g class="organ-hotspot selected" data-organ="alveoli" tabindex="0" role="button" aria-label="Pilih organ alveolus">
+         <g fill="#ef8d85" stroke="#9e4639" stroke-width="1.5">
+          <circle cx="118" cy="382" r="12" />
+          <circle cx="137" cy="394" r="11" />
+          <circle cx="155" cy="377" r="13" />
+          <circle cx="130" cy="418" r="12" />
+          <circle cx="158" cy="418" r="11" />
+          <circle cx="302" cy="382" r="12" />
+          <circle cx="283" cy="394" r="11" />
+          <circle cx="265" cy="377" r="13" />
+          <circle cx="290" cy="418" r="12" />
+          <circle cx="262" cy="418" r="11" />
+         </g>
+        </g> <text x="210" y="570" text-anchor="middle" font-family="DM Sans" font-size="14" fill="#5d7486">
+         Klik bagian berwarna untuk mengenal organ
+        </text>
+       </svg>
+      </section>
+      <aside class="bg-[#8fc8c7] rounded-[2rem] p-7 sm:p-9 text-[#29445a] shadow-xl flex flex-col justify-center" aria-label="Informasi organ">
+       <div class="organ-panel" data-organ-panel="nose"><span data-template-id="info-label-nose" class="canva-tag inline-block px-3 py-1 rounded-full font-bold"></span>
+        <h3 data-template-id="info-name-nose" class="canva-text display-font font-bold mt-4"></h3>
+        <h4 data-template-id="info-function-label-nose" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-function-nose" class="canva-text leading-relaxed mt-2"></p>
+        <h4 data-template-id="info-fact-label-nose" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-fact-nose" class="canva-text leading-relaxed mt-2"></p>
+       </div>
+       <div class="organ-panel" data-organ-panel="pharynx"><span data-template-id="info-label-pharynx" class="canva-tag inline-block px-3 py-1 rounded-full font-bold"></span>
+        <h3 data-template-id="info-name-pharynx" class="canva-text display-font font-bold mt-4"></h3>
+        <h4 data-template-id="info-function-label-pharynx" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-function-pharynx" class="canva-text leading-relaxed mt-2"></p>
+        <h4 data-template-id="info-fact-label-pharynx" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-fact-pharynx" class="canva-text leading-relaxed mt-2"></p>
+       </div>
+       <div class="organ-panel" data-organ-panel="larynx"><span data-template-id="info-label-larynx" class="canva-tag inline-block px-3 py-1 rounded-full font-bold"></span>
+        <h3 data-template-id="info-name-larynx" class="canva-text display-font font-bold mt-4"></h3>
+        <h4 data-template-id="info-function-label-larynx" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-function-larynx" class="canva-text leading-relaxed mt-2"></p>
+        <h4 data-template-id="info-fact-label-larynx" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-fact-larynx" class="canva-text leading-relaxed mt-2"></p>
+       </div>
+       <div class="organ-panel" data-organ-panel="trachea"><span data-template-id="info-label-trachea" class="canva-tag inline-block px-3 py-1 rounded-full font-bold"></span>
+        <h3 data-template-id="info-name-trachea" class="canva-text display-font font-bold mt-4"></h3>
+        <h4 data-template-id="info-function-label-trachea" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-function-trachea" class="canva-text leading-relaxed mt-2"></p>
+        <h4 data-template-id="info-fact-label-trachea" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-fact-trachea" class="canva-text leading-relaxed mt-2"></p>
+       </div>
+       <div class="organ-panel" data-organ-panel="bronchi"><span data-template-id="info-label-bronchi" class="canva-tag inline-block px-3 py-1 rounded-full font-bold"></span>
+        <h3 data-template-id="info-name-bronchi" class="canva-text display-font font-bold mt-4"></h3>
+        <h4 data-template-id="info-function-label-bronchi" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-function-bronchi" class="canva-text leading-relaxed mt-2"></p>
+        <h4 data-template-id="info-fact-label-bronchi" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-fact-bronchi" class="canva-text leading-relaxed mt-2"></p>
+       </div>
+       <div class="organ-panel" data-organ-panel="bronchioles"><span data-template-id="info-label-bronchioles" class="canva-tag inline-block px-3 py-1 rounded-full font-bold"></span>
+        <h3 data-template-id="info-name-bronchioles" class="canva-text display-font font-bold mt-4"></h3>
+        <h4 data-template-id="info-function-label-bronchioles" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-function-bronchioles" class="canva-text leading-relaxed mt-2"></p>
+        <h4 data-template-id="info-fact-label-bronchioles" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-fact-bronchioles" class="canva-text leading-relaxed mt-2"></p>
+       </div>
+       <div class="organ-panel active" data-organ-panel="alveoli"><span data-template-id="info-label-alveoli" class="canva-tag inline-block px-3 py-1 rounded-full font-bold"></span>
+        <h3 data-template-id="info-name-alveoli" class="canva-text display-font font-bold mt-4"></h3>
+        <h4 data-template-id="info-function-label-alveoli" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-function-alveoli" class="canva-text leading-relaxed mt-2"></p>
+        <h4 data-template-id="info-fact-label-alveoli" class="canva-text font-bold mt-6"></h4>
+        <p data-template-id="info-fact-alveoli" class="canva-text leading-relaxed mt-2"></p>
+       </div>
+      </aside>
+     </div>
+     <nav class="slide-nav w-full max-w-6xl mx-auto mt-auto pt-6 flex items-center justify-between gap-4" aria-label="Navigasi slide"><button id="organ-back-button" type="button" data-template-id="organ-back-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 bg-white/80 shadow-sm font-bold"><i data-lucide="arrow-left" class="w-4 h-4" aria-hidden="true"></i><span data-template-id="organ-back-text" class="canva-text"></span></button> <button id="organ-next-button" type="button" data-template-id="organ-next-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold"><span data-template-id="organ-next-text" class="canva-text"></span><i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></button>
+     </nav>
+    </section>
+    <section id="simulation-screen" class="screen flex-col px-5 py-7" aria-labelledby="simulation-title">
+     <header class="w-full max-w-6xl mx-auto flex justify-between items-center mb-5">
+      <div>
+       <p data-template-id="simulation-kicker" class="canva-text uppercase tracking-[0.18em] font-bold"></p>
+       <h2 id="simulation-title" data-template-id="simulation-title" class="canva-text display-font font-bold"></h2>
+      </div><button type="button" class="back-to-menu lab-button inline-flex items-center gap-2 rounded-full px-4 py-3 bg-white shadow-sm font-bold text-[#035b66]" aria-label="Kembali ke menu utama"> <i data-lucide="arrow-left" class="w-5 h-5" aria-hidden="true"></i> <span data-template-id="back-label-simulation" class="canva-text"></span> </button>
+     </header>
+     <div class="w-full max-w-6xl mx-auto grid lg:grid-cols-[1.15fr_0.85fr] gap-6">
+      <div id="sim-stage" data-template-id="simulation-stage" class="canva-panel sim-stage rounded-[2rem] min-h-[460px] p-5 sm:p-8 relative overflow-hidden"><span data-template-id="oxygen-pill" class="canva-tag gas-pill oxygen-pill absolute left-7 top-7 rounded-full px-4 py-2 font-bold">O₂ masuk</span> <span data-template-id="carbon-pill" class="canva-tag gas-pill carbon-pill absolute right-7 top-7 rounded-full px-4 py-2 font-bold">CO₂ keluar</span>
+       <svg viewbox="0 0 520 430" class="w-full h-full min-h-[390px]" role="img" aria-label="Simulasi paru-paru dan diafragma"><path d="M260 45v125" stroke="#153047" stroke-width="17" stroke-linecap="round" /> <path d="M260 150L186 212M260 150l74 62" fill="none" stroke="#047f82" stroke-width="17" stroke-linecap="round" /> <g class="sim-lungs">
+         <path d="M243 151c-58 3-104 54-107 128-2 61 23 94 61 83 29-8 33-52 46-98z" fill="#ef8d85" stroke="#9e4639" stroke-width="6" />
+         <path d="M277 151c58 3 104 54 107 128 2 61-23 94-61 83-29-8-33-52-46-98z" fill="#ef8d85" stroke="#9e4639" stroke-width="6" />
+         <path d="M241 184c-35 20-51 58-52 102M279 184c35 20 51 58 52 102" fill="none" stroke="#f7c0b9" stroke-width="7" stroke-linecap="round" />
+        </g> <path class="sim-diaphragm" d="M130 342Q260 398 390 342" fill="none" stroke="#f4b94f" stroke-width="20" stroke-linecap="round" /> <path class="air-flow oxygen-flow flow-dot" d="M260 42v102l-74 70M260 144l74 70" fill="none" stroke="#148bc2" stroke-width="8" stroke-dasharray="12 12" stroke-linecap="round" /> <path class="air-flow carbon-flow flow-dot" d="M186 214l74-70V42M334 214l-74-70" fill="none" stroke="#6e72c9" stroke-width="8" stroke-dasharray="12 12" stroke-linecap="round" /> <text x="260" y="420" text-anchor="middle" font-family="DM Sans" font-size="14" fill="#5d7486">
+         Diafragma
+        </text>
+       </svg>
+      </div>
+      <aside class="bg-white glass-card rounded-[2rem] p-7 sm:p-8">
+       <p data-template-id="simulation-instruction" class="canva-text leading-relaxed mb-6"></p>
+       <div class="grid grid-cols-2 gap-3 mb-7"><button id="inhale-button" type="button" data-template-id="inhale-button" class="canva-button lab-button rounded-2xl px-4 py-4 font-bold"> <span data-template-id="inhale-button-text" class="canva-text"></span> </button> <button id="exhale-button" type="button" data-template-id="exhale-button" class="canva-button lab-button rounded-2xl px-4 py-4 font-bold"> <span data-template-id="exhale-button-text" class="canva-text"></span> </button>
+       </div>
+       <div class="rounded-2xl bg-[#e7f7f5] p-5">
+        <p data-template-id="breath-status-label" class="canva-text text-sm font-bold uppercase tracking-wider"></p>
+        <p id="breath-status" class="font-bold text-xl mt-2 text-[#035b66]" aria-live="polite">Siap diamati</p>
+       </div>
+       <div class="mt-6 space-y-4">
+        <div class="flex gap-3"><span class="w-8 h-8 rounded-full bg-[#d8f2fb] grid place-items-center text-[#148bc2] shrink-0"><i data-lucide="move-down" class="w-4 h-4" aria-hidden="true"></i></span>
+         <p data-template-id="inhale-explanation" class="canva-text leading-relaxed"></p>
+        </div>
+        <div class="flex gap-3"><span class="w-8 h-8 rounded-full bg-[#eeeafd] grid place-items-center text-[#6e72c9] shrink-0"><i data-lucide="move-up" class="w-4 h-4" aria-hidden="true"></i></span>
+         <p data-template-id="exhale-explanation" class="canva-text leading-relaxed"></p>
+        </div>
+       </div>
+      </aside>
+     </div>
+     <nav class="slide-nav w-full max-w-6xl mx-auto mt-auto pt-6 flex items-center justify-between gap-4" aria-label="Navigasi slide"><button id="simulation-back-button" type="button" data-template-id="simulation-back-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 bg-white/80 shadow-sm font-bold"><i data-lucide="arrow-left" class="w-4 h-4" aria-hidden="true"></i><span data-template-id="simulation-back-text" class="canva-text"></span></button> <button id="simulation-next-button" type="button" data-template-id="simulation-next-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold"><span data-template-id="simulation-next-text" class="canva-text"></span><i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></button>
+     </nav>
+    </section>
+    <section id="experiment-screen" class="screen flex-col px-5 py-7" aria-labelledby="experiment-title">
+     <header class="w-full max-w-6xl mx-auto flex justify-between items-center mb-5">
+      <div>
+       <p data-template-id="experiment-kicker" class="canva-text uppercase tracking-[0.18em] font-bold"></p>
+       <h2 id="experiment-title" data-template-id="experiment-title" class="canva-text display-font font-bold"></h2>
+      </div><button type="button" class="back-to-menu lab-button inline-flex items-center gap-2 rounded-full px-4 py-3 bg-white shadow-sm font-bold text-[#035b66]" aria-label="Kembali ke menu utama"> <i data-lucide="arrow-left" class="w-5 h-5" aria-hidden="true"></i> <span data-template-id="back-label-experiment" class="canva-text"></span> </button>
+     </header>
+     <div class="w-full max-w-6xl mx-auto">
+      <section data-template-id="experiment-card" class="canva-card rounded-[2rem] p-7 sm:p-9 bg-white glass-card">
+       <p data-template-id="experiment-question" class="canva-text leading-relaxed mb-7"></p>
+       <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-6 items-stretch">
+        <div class="grid sm:grid-cols-3 lg:grid-cols-1 gap-3"><button type="button" aria-pressed="true" class="activity-choice selected rounded-2xl p-5 bg-[#f7fbfa] text-left flex items-center gap-5" data-activity="rest"> <span class="activity-icon text-6xl leading-none shrink-0" aria-hidden="true">🧘</span> <span data-template-id="activity-rest" class="canva-text font-bold"></span> </button> <button type="button" aria-pressed="false" class="activity-choice rounded-2xl p-5 bg-[#f7fbfa] text-left flex items-center gap-5" data-activity="walk"> <span class="activity-icon text-6xl leading-none shrink-0" aria-hidden="true">🚶</span> <span data-template-id="activity-walk" class="canva-text font-bold"></span> </button> <button type="button" aria-pressed="false" class="activity-choice rounded-2xl p-5 bg-[#f7fbfa] text-left flex items-center gap-5" data-activity="run"> <span class="activity-icon text-6xl leading-none shrink-0" aria-hidden="true">🏃</span> <span data-template-id="activity-run" class="canva-text font-bold"></span> </button>
+        </div>
+        <div class="rounded-3xl bg-[#8fc8c7] text-[#29445a] p-7 flex flex-col justify-center">
+         <p data-template-id="frequency-label" class="canva-text uppercase tracking-[0.16em] font-bold"></p>
+         <div class="flex items-end gap-3 mt-3"><strong id="frequency-value" class="text-6xl leading-none">14</strong> <span data-template-id="frequency-unit" class="canva-text mb-1"></span>
+         </div>
+         <p id="frequency-description" class="mt-4 text-[#d5f2ef]" aria-live="polite">Tubuh berada dalam kondisi tenang.</p>
+        </div>
+       </div>
+      </section>
+     </div>
+     <nav class="slide-nav w-full max-w-6xl mx-auto mt-auto pt-6 flex items-center justify-between gap-4" aria-label="Navigasi slide"><button id="experiment-back-button" type="button" data-template-id="experiment-back-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 bg-white/80 shadow-sm font-bold"><i data-lucide="arrow-left" class="w-4 h-4" aria-hidden="true"></i><span data-template-id="experiment-back-text" class="canva-text"></span></button> <button id="experiment-next-button" type="button" data-template-id="experiment-next-button" class="canva-button lab-button inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold"><span data-template-id="experiment-next-text" class="canva-text"></span><i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></button>
+     </nav>
+    </section>
+   </main>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+
+      const screens = document.querySelectorAll(".screen");
+      function showScreen(id) {
+        screens.forEach(screen => screen.classList.toggle("active", screen.id === id));
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      document.getElementById("start-button").addEventListener("click", () => showScreen("intro-screen"));
+      document.getElementById("menu-button").addEventListener("click", () => showScreen("menu-screen"));
+      document.getElementById("organ-menu-card").addEventListener("click", () => showScreen("organ-screen"));
+      document.getElementById("simulation-menu-card").addEventListener("click", () => showScreen("simulation-screen"));
+      document.getElementById("experiment-menu-card").addEventListener("click", () => showScreen("experiment-screen"));
+      document.querySelectorAll(".back-to-menu").forEach(button => button.addEventListener("click", () => showScreen("menu-screen")));
+      const slideRoutes = {
+        "intro-back-button": "lobby-screen", "intro-next-button": "menu-screen",
+        "menu-back-button": "intro-screen", "menu-next-button": "organ-screen", "organ-back-button": "menu-screen",
+        "organ-next-button": "simulation-screen", "simulation-back-button": "organ-screen", "simulation-next-button": "experiment-screen",
+        "experiment-back-button": "simulation-screen", "experiment-next-button": "menu-screen"
+      };
+      Object.entries(slideRoutes).forEach(([buttonId, screenId]) => {
+        document.getElementById(buttonId).addEventListener("click", () => showScreen(screenId));
+      });
+
+      function selectOrgan(name) {
+        document.querySelectorAll(".organ-hotspot").forEach(item => {
+          item.classList.toggle("selected", item.dataset.organ === name);
+        });
+        document.querySelectorAll(".organ-panel").forEach(panel => {
+          panel.classList.toggle("active", panel.dataset.organPanel === name);
+        });
+      }
+
+      document.querySelectorAll(".organ-hotspot").forEach(hotspot => {
+        hotspot.addEventListener("click", () => selectOrgan(hotspot.dataset.organ));
+        hotspot.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            selectOrgan(hotspot.dataset.organ);
+          }
+        });
+      });
+
+      const simStage = document.getElementById("sim-stage");
+      const breathStatus = document.getElementById("breath-status");
+      document.getElementById("inhale-button").addEventListener("click", () => {
+        simStage.classList.remove("exhale");
+        simStage.classList.add("inhale");
+        breathStatus.textContent = "Inspirasi — udara kaya O₂ masuk";
+      });
+      document.getElementById("exhale-button").addEventListener("click", () => {
+        simStage.classList.remove("inhale");
+        simStage.classList.add("exhale");
+        breathStatus.textContent = "Ekspirasi — udara kaya CO₂ keluar";
+      });
+
+      const activityData = {
+        rest: { value: "14", description: "Tubuh berada dalam kondisi tenang." },
+        walk: { value: "22", description: "Otot membutuhkan lebih banyak oksigen saat berjalan." },
+        run: { value: "34", description: "Saat berlari, tubuh membutuhkan oksigen lebih cepat sehingga frekuensi napas meningkat." }
+      };
+
+      const frequencyValue = document.getElementById("frequency-value");
+      const frequencyDescription = document.getElementById("frequency-description");
+      document.querySelectorAll(".activity-choice").forEach(choice => {
+        choice.addEventListener("click", () => {
+          const data = activityData[choice.dataset.activity];
+          document.querySelectorAll(".activity-choice").forEach(item => {
+            item.classList.remove("selected");
+            item.setAttribute("aria-pressed", "false");
+          });
+          choice.classList.add("selected");
+          choice.setAttribute("aria-pressed", "true");
+          frequencyValue.textContent = data.value;
+          frequencyDescription.textContent = data.description;
+        });
+      });
+
+    });
+  </script>
+ </body>
+</html>
